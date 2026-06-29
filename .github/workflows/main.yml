@@ -42,7 +42,7 @@ jobs:
 
       - run: mvn clean package -DskipTests
 
-      - uses: action/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
 
         with:
 
@@ -50,7 +50,7 @@ jobs:
 
           path: target/*.jar
 
-test:
+  test:
 
     runs-on: ubuntu-latest
 
@@ -106,7 +106,7 @@ test:
 
           SPRING_DATASOURCE_PASSWORD: Inazuma160405
 
-      - uses: action/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
 
         if: always()
 
