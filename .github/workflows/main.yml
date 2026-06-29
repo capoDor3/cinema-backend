@@ -50,7 +50,7 @@ jobs:
 
           path: target/*.jar
 
-test:
+  test:
 
     runs-on: ubuntu-latest
 
