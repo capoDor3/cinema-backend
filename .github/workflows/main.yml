@@ -42,7 +42,7 @@ jobs:
 
       - run: mvn clean package -DskipTests
 
-      - uses: action/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
 
         with:
 
